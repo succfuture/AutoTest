@@ -17,6 +17,12 @@ public class BasicAnnotation {
         System.out.println("Test这是测试用例2");
     }
 
+    @Test
+    public void testCase3(){
+        System.out.printf("thread Id : %s%n", Thread.currentThread().getId());
+        System.out.println("这是测试用例3");
+    }
+
     @BeforeMethod
     public void beforeMethod(){
         System.out.println("BeforeMethod这是在测试方法之前运行的");
